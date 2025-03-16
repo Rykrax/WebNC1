@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-public class BankController : Controller
+[Route("api/banks")]
+[ApiController]
+public class BankController : ControllerBase
 {
     private readonly AppDbContext _context;
 
@@ -10,40 +12,51 @@ public class BankController : Controller
         _context = context;
     }
 
-    // Lấy danh sách bank
-    [HttpGet("/get-banks")]
+    //Lấy danh sách Bank
+    [HttpGet]
     public async Task<ActionResult<IEnumerable<Bank>>> GetBanks()
     {
         return await _context.Banks.ToListAsync();
     }
 
-    // [HttpDelete("delete-bank/{bankCode}")]
-    // public async Task<IActionResult> DeleteBank(string bankCode)
-    // {
-    //     var bank = await _context.Banks.FindAsync(bankCode);
-    //     if (bank == null)
-    //     {
-    //         return NotFound(new { message = "Bank không tồn tại!" });
-    //     }
+    //Lấy Bank theo ID
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Bank>> GetBank(int id)
+    {
+        var bank = await _context.Banks.FindAsync(id);
+        if (bank == null) return NotFound();
+        return bank;
+    }
 
-    //     _context.Banks.Remove(bank);
-    //     await _context.SaveChangesAsync();
-    //     return Ok(new { message = "Xóa thành công!", bank });
-    // }
+    //Thêm Bank mới
+    [HttpPost]
+    public async Task<ActionResult<Bank>> CreateBank(Bank bank)
+    {
+        _context.Banks.Add(bank);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetBank), new { id = bank.BankID }, bank);
+    }
 
-    // [HttpPost("create-bank")]
-    // public async Task<ActionResult<Bank>> CreateBank([FromBody] Bank bank)
-    // {
-    //     // Kiểm tra nếu bank đã tồn tại
-    //     var existingBank = await _context.Banks.FindAsync(bank.BankCode);
-    //     if (existingBank != null)
-    //     {
-    //         return Conflict(new { message = "Bank đã tồn tại!" });
-    //     }
+    //Cập nhật Bank
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateBank(int id, Bank bank)
+    {
+        if (id != bank.BankID) return BadRequest();
 
-    //     _context.Banks.Add(bank);
-    //     await _context.SaveChangesAsync();
+        _context.Entry(bank).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
 
-    //     return CreatedAtAction(nameof(GetBanks), new { bankCode = bank.BankCode }, bank);
-    // }
+    //Xóa Bank
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteBank(int id)
+    {
+        var bank = await _context.Banks.FindAsync(id);
+        if (bank == null) return NotFound();
+
+        _context.Banks.Remove(bank);
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
 }

@@ -24,6 +24,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 09:52:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebNC1/img/techcombank.n4gcqi9il9.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\techcombank.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n4gcqi9il9"},{"Name":"integrity","Value":"sha256-WTE8B5TWmU\u002BUdh6LDOabokth/Tph2/IBjNg5C9eSXu8="},{"Name":"label","Value":"_content/WebNC1/img/techcombank.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19524"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WTE8B5TWmU\u002BUdh6LDOabokth/Tph2/IBjNg5C9eSXu8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 10:06:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebNC1/img/techcombank.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\techcombank.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WTE8B5TWmU\u002BUdh6LDOabokth/Tph2/IBjNg5C9eSXu8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"19524"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WTE8B5TWmU\u002BUdh6LDOabokth/Tph2/IBjNg5C9eSXu8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 10:06:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebNC1/img/vietcombank.5rl2wr2hk8.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\vietcombank.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5rl2wr2hk8"},{"Name":"integrity","Value":"sha256-oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw="},{"Name":"label","Value":"_content/WebNC1/img/vietcombank.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29675"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 10:05:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebNC1/img/vietcombank.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\vietcombank.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"29675"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 10:05:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebNC1/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

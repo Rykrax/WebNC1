@@ -897,6 +897,170 @@
       ]
     },
     {
+      "Route": "img/techcombank.n4gcqi9il9.png",
+      "AssetFile": "img/techcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:06:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n4gcqi9il9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8="
+        },
+        {
+          "Name": "label",
+          "Value": "img/techcombank.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/techcombank.png",
+      "AssetFile": "img/techcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:06:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8="
+        }
+      ]
+    },
+    {
+      "Route": "img/vietcombank.5rl2wr2hk8.png",
+      "AssetFile": "img/vietcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:05:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5rl2wr2hk8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw="
+        },
+        {
+          "Name": "label",
+          "Value": "img/vietcombank.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/vietcombank.png",
+      "AssetFile": "img/vietcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:05:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js.gz",
       "Selectors": [

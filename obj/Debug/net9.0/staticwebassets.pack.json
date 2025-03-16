@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\techcombank.png",
+      "PackagePath": "staticwebassets\\img\\techcombank.png"
+    },
+    {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\vietcombank.png",
+      "PackagePath": "staticwebassets\\img\\vietcombank.png"
+    },
+    {
       "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

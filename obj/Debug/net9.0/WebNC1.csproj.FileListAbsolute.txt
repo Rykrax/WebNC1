@@ -230,3 +230,4 @@ E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\refint\WebNC1.dll
 E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\WebNC1.pdb
 E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\WebNC1.genruntimeconfig.cache
 E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\ref\WebNC1.dll
+E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\WebNC1.sourcelink.json

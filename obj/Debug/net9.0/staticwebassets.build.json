@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/GCC9KfYhYl3IAm4ppBypY3x0XqG0XoiFg9Z4/lIkCI=",
+  "Hash": "SHcixjrZaEDd7rZU87X1yhaBbeQelMYAohrbhM9Se7E=",
   "Source": "WebNC1",
   "BasePath": "_content/WebNC1",
   "Mode": "Default",
@@ -1464,6 +1464,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\techcombank.png",
+      "SourceId": "WebNC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\",
+      "BasePath": "_content/WebNC1",
+      "RelativePath": "img/techcombank#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n4gcqi9il9",
+      "Integrity": "WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\techcombank.png"
+    },
+    {
+      "Identity": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\vietcombank.png",
+      "SourceId": "WebNC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\",
+      "BasePath": "_content/WebNC1",
+      "RelativePath": "img/vietcombank#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5rl2wr2hk8",
+      "Integrity": "oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\vietcombank.png"
     },
     {
       "Identity": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\site.js",
@@ -3362,6 +3404,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "img/techcombank.n4gcqi9il9.png",
+      "AssetFile": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\techcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:06:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n4gcqi9il9"
+        },
+        {
+          "Name": "label",
+          "Value": "img/techcombank.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8="
+        }
+      ]
+    },
+    {
+      "Route": "img/techcombank.png",
+      "AssetFile": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\techcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:06:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WTE8B5TWmU+Udh6LDOabokth/Tph2/IBjNg5C9eSXu8="
+        }
+      ]
+    },
+    {
+      "Route": "img/vietcombank.5rl2wr2hk8.png",
+      "AssetFile": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\vietcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5rl2wr2hk8"
+        },
+        {
+          "Name": "label",
+          "Value": "img/vietcombank.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw="
+        }
+      ]
+    },
+    {
+      "Route": "img/vietcombank.png",
+      "AssetFile": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\vietcombank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 10:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oaYJ62q9rfk3q15drbWU/uW0ebMkBz8Sp8sLaX47gyw="
         }
       ]
     },
