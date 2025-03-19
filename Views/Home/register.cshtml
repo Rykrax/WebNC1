@@ -1,16 +1,30 @@
+@{
+    ViewData["Title"] = "Đăng ký";
+}
+
 @section Styles {
     <link rel="stylesheet" href="~/css/register.css" />
 }
 @section Scripts {
+    @* <script src="~/js/register.js"></script> *@
     <script src="~/js/script.js"></script>
     <script src="~/js/validator.js"></script>
     <script>
         Validator({
         form: '#register-form',
+        errorSelector: '.form-message',
+        formGroupSelector: '.form-group',
         rules: [
+            Validator.isRequired('#email'),
             Validator.isEmail('#email'),
-            Validator.isPassword('#password')
-        ]
+            Validator.isRequired('#password'),
+            Validator.minLength('#password', 6),
+            Validator.isRequired('#confirm'),
+            Validator.isConfirmed('#confirm', function() {
+                return document.querySelector('#register-form #password').value;
+            }, 'Mật khẩu nhập lại không chính xác'),
+        ],
+        onSubmit: (data) => { console.log(data)}
     });
     </script>
 }
@@ -27,21 +41,33 @@
                     </div>
 
                     <form method="get" action="" id="register-form">
-                        <div class="form-group">
+                        <div class="form-group mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" name="email" id="email" class="form-control">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="VD: email@domain.com">
+                            @* <span class="form-message"></span> *@
+                            <div class="form-message"></div>
+                        </div>
 
-                            <label for="password" class="form-label mt-4">Mật khẩu</label>
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Mật khẩu</label>
                             <input type="password" name="password" id="password" class="form-control">
-
-                            <label for="confirm" class="form-label mt-4">Nhập lại mật khẩu</label>
+                            <span class="form-message"></span>
+                        </div>
+                        
+                        <div class="form-group mb-4">
+                            <label for="confirm" class="form-label">Nhập lại mật khẩu</label>
                             <input type="password" name="confirm" id="confirm" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
 
-                            <div class="col-md-12 text-center mt-5">
+                        <div class="mb-2">
+                            <div class="col-md-12 text-center">
                                 <button type="submit" class="btn btn-block mybtn btn-primary tx-tfm" id="register">Đăng ký</button>
                             </div>
+                        </div>
 
-                            <div class="form-group mt-3">
+                        <div class="mt-1">
+                            <div class="form-group">
                               <p class="text-center">Đã có tài khoản? <a href="/login" id="signup">Đăng nhập</a></p>
                            </div>
                         </div>
