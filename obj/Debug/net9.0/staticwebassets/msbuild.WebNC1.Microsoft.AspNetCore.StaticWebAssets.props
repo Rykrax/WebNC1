@@ -156,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ykptmh5dm2</Fingerprint>
-      <Integrity>Po/PcgSbaFSQrll85NuALvL+74DnQ8hvzYj/rk5HnBM=</Integrity>
+      <Fingerprint>iilfpng9re</Fingerprint>
+      <Integrity>qs+U0QDcsMwixnY+p/uucuioM4ffnpic1kgJ+A6IEfQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</OriginalItemSpec>
@@ -210,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7fa4y1ly8l</Fingerprint>
-      <Integrity>w+Ph7gATAdo2YSjxcznVVNLudAFiJri6JLglv4YnWcw=</Integrity>
+      <Fingerprint>galoi3dy8y</Fingerprint>
+      <Integrity>yA8HU4L2W6Js5qsEXBlNehjVAeE9ehfWCWVy0GkANpw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\validator.js'))</OriginalItemSpec>

@@ -24,7 +24,10 @@
                 return document.querySelector('#register-form #password').value;
             }, 'Mật khẩu nhập lại không chính xác'),
         ],
-        onSubmit: (data) => { console.log(data)}
+        onSubmit: (data, event) => {
+            console.log(data);
+            handleCreateUser(event);
+        }
     });
     </script>
 }

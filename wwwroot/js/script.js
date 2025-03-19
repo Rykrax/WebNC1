@@ -21,8 +21,8 @@ let createUser = (data, callback) => {
         .catch(error => console.error("Lỗi khi gửi request:", error));
 };
 
-let handleCreateUser = (e) => {
-    e.preventDefault();
+let handleCreateUser = () => {
+    // e.preventDefault();
     console.log("vào handleCreateUser");
     let email = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
@@ -49,7 +49,7 @@ let start = () => {
     getUsers((users) => {
         console.log(users);
     });
-    document.querySelector('#register').addEventListener('click', handleCreateUser);
+    document.querySelector('#register').addEventListener('submit', handleCreateUser);
 };
 
 start();
