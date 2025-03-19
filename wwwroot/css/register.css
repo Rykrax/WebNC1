@@ -1,0 +1,23 @@
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myform{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    padding: 1.5rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 1.1rem;
+    outline: 0;
+    max-width: 500px;
+}

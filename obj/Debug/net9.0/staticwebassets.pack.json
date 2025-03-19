@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\WebNC1.dxdjeln5fj.bundle.scp.css"
     },
     {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
       "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -19,6 +27,18 @@
     {
       "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\img\\vietcombank.png",
       "PackagePath": "staticwebassets\\img\\vietcombank.png"
+    },
+    {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\register.js",
+      "PackagePath": "staticwebassets\\js\\register.js"
+    },
+    {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\site.js",

@@ -1,4 +1,4 @@
-create database WebNC1
+﻿create database WebNC1
 go
 
 use WebNC1
@@ -6,19 +6,30 @@ go
 
 create table users (
 	UserID int identity(1,1) primary key,
-	PhoneNumber varchar(15) unique not null,
+	PhoneNumber varchar(15) unique,
 	PasswordHash varchar(255) not null,
 	FullName nvarchar(255),
 	CCCD char(12) unique,
 	BirthDate date,
 	Email varchar(255) unique,
 	Balance int default 0,
-	PinCode char(6) not null,
+	PinCode char(6),
 	CreateAt datetime default getdate(),
 	StatusUser nvarchar(255),
 	RoleUser nvarchar(20) not null default 'user'
 )
 go
+
+ALTER TABLE users 
+ALTER COLUMN CCCD CHAR(12) NULL;
+ALTER TABLE users 
+ADD CONSTRAINT unique_cccd UNIQUE (CCCD);
+
+
+ALTER TABLE users 
+ADD CONSTRAINT unique_email UNIQUE (Email);
+CREATE UNIQUE INDEX unique_phonenumber ON users (PhoneNumber) WHERE PhoneNumber IS NOT NULL;
+CREATE UNIQUE INDEX unique_cccd ON users (CCCD) WHERE CCCD IS NOT NULL;
 
 create table banks (
 	BankID int identity(1,1) primary key,

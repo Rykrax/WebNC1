@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebNC1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250316104536_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250319061728_FixUniqueIndexes")]
+    partial class FixUniqueIndexes
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -143,7 +143,6 @@ namespace WebNC1.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CCCD")
-                        .IsRequired()
                         .HasMaxLength(12)
                         .HasColumnType("char(12)");
 
@@ -155,7 +154,6 @@ namespace WebNC1.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("PasswordHash")
@@ -163,12 +161,10 @@ namespace WebNC1.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("varchar(15)");
 
                     b.Property<string>("PinCode")
-                        .IsRequired()
                         .HasMaxLength(6)
                         .HasColumnType("char(6)");
 

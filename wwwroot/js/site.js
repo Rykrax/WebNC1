@@ -1,4 +1,5 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿// Initialization for ES Users
+// import { Input, Tab, Ripple, initMDB } from "mdb-ui-kit";
 
-// Write your JavaScript code.
+// initMDB({ Input, Tab, Ripple });
+

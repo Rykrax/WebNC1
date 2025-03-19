@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebNC1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250317145624_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -140,6 +143,7 @@ namespace WebNC1.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CCCD")
+                        .IsRequired()
                         .HasMaxLength(12)
                         .HasColumnType("char(12)");
 
@@ -151,6 +155,7 @@ namespace WebNC1.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("FullName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("PasswordHash")
@@ -158,10 +163,12 @@ namespace WebNC1.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("varchar(15)");
 
                     b.Property<string>("PinCode")
+                        .IsRequired()
                         .HasMaxLength(6)
                         .HasColumnType("char(6)");
 

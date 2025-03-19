@@ -18,6 +18,18 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet("/login")]
+    public IActionResult login()
+    {
+        return View();
+    }
+
+    [HttpGet("/register")]
+    public IActionResult register()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();
