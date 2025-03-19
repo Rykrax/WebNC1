@@ -26,11 +26,6 @@ public class AuthController : ControllerBase
 
     //     return Ok(new { message = "Đăng nhập thành công", userId = user.Id });
     // }
-    [HttpGet("users")]
-    public async Task<ActionResult<IEnumerable<User>>> GetUsers()
-    {
-        return await _context.Users.ToListAsync();
-    }
 
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegisterDTO model)
@@ -46,9 +41,8 @@ public class AuthController : ControllerBase
         var user = new User
         {
             Email = model.Email,
-            PasswordHash = model.Password
-            // PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password), // Mã hóa mật khẩu
-            // CreateAt = DateTime.Now
+            // PasswordHash = model.Password
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password), // Mã hóa mật khẩu
         };
 
         _context.Users.Add(user);

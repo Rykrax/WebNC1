@@ -4,32 +4,52 @@ go
 use WebNC1
 go
 
-create table users (
-	UserID int identity(1,1) primary key,
-	PhoneNumber varchar(15) unique,
-	PasswordHash varchar(255) not null,
-	FullName nvarchar(255),
-	CCCD char(12) unique,
-	BirthDate date,
-	Email varchar(255) unique,
-	Balance int default 0,
-	PinCode char(6),
-	CreateAt datetime default getdate(),
-	StatusUser nvarchar(255),
-	RoleUser nvarchar(20) not null default 'user'
-)
-go
+-- create table users (
+-- 	UserID int identity(1,1) primary key,
+-- 	PhoneNumber varchar(15) unique,
+-- 	PasswordHash varchar(255) not null,
+-- 	FullName nvarchar(255),
+-- 	CCCD char(12) unique,
+-- 	BirthDate date,
+-- 	Email varchar(255) unique,
+-- 	Balance int default 0,
+-- 	PinCode char(6),
+-- 	CreateAt datetime default getdate(),
+-- 	StatusUser nvarchar(255),
+-- 	RoleUser nvarchar(20) not null default 'user'
+-- )
+-- go
 
-ALTER TABLE users 
-ALTER COLUMN CCCD CHAR(12) NULL;
-ALTER TABLE users 
-ADD CONSTRAINT unique_cccd UNIQUE (CCCD);
+-- ALTER TABLE users 
+-- ALTER COLUMN CCCD CHAR(12) NULL;
+-- ALTER TABLE users 
+-- ADD CONSTRAINT unique_cccd UNIQUE (CCCD);
 
 
-ALTER TABLE users 
-ADD CONSTRAINT unique_email UNIQUE (Email);
+-- ALTER TABLE users 
+-- ADD CONSTRAINT unique_email UNIQUE (Email);
+-- CREATE UNIQUE INDEX unique_phonenumber ON users (PhoneNumber) WHERE PhoneNumber IS NOT NULL;
+-- CREATE UNIQUE INDEX unique_cccd ON users (CCCD) WHERE CCCD IS NOT NULL;
+
+CREATE TABLE users (
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    PhoneNumber VARCHAR(15) NULL, -- Cho phép NULL
+    PasswordHash VARCHAR(255) NOT NULL,
+    FullName NVARCHAR(255),
+    CCCD CHAR(12) NULL, -- Cho phép NULL
+    BirthDate DATE,
+    Email VARCHAR(255) NULL, -- Cho phép NULL
+    Balance INT DEFAULT 0,
+    PinCode CHAR(6),
+    CreateAt DATETIME DEFAULT GETDATE(),
+    StatusUser NVARCHAR(255),
+    RoleUser NVARCHAR(20) NOT NULL DEFAULT 'user'
+);
+
+-- Tạo các UNIQUE INDEX chỉ áp dụng cho giá trị KHÁC NULL
 CREATE UNIQUE INDEX unique_phonenumber ON users (PhoneNumber) WHERE PhoneNumber IS NOT NULL;
 CREATE UNIQUE INDEX unique_cccd ON users (CCCD) WHERE CCCD IS NOT NULL;
+CREATE UNIQUE INDEX unique_email ON users (Email) WHERE Email IS NOT NULL;
 
 create table banks (
 	BankID int identity(1,1) primary key,

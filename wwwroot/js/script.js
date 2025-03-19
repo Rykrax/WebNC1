@@ -4,7 +4,7 @@ const bankAPI = baseAPI + "banks/";
 const transactionAPI = baseAPI + "transactions/";
 const authAPI = baseAPI + "auth/";
 
-console.log(baseAPI, userAPI, bankAPI);
+// console.log(baseAPI, userAPI, bankAPI);
 
 let createUser = (data, callback) => {
     let options = {
@@ -14,7 +14,7 @@ let createUser = (data, callback) => {
         },
         body: JSON.stringify(data)
     }
-    
+
     fetch(authAPI + 'register', options)
         .then(response => response.json())
         .then(callback)

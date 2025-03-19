@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebNC1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+370c26dff64a0a48efdfd94c570a0e05f43533cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b152f440c6b94cbcc0e6d212cb2c61e097215535")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebNC1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebNC1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
