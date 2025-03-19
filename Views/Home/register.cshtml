@@ -24,9 +24,9 @@
                 return document.querySelector('#register-form #password').value;
             }, 'Mật khẩu nhập lại không chính xác'),
         ],
-        onSubmit: (data, event) => {
+        onSubmit: (data) => {
             console.log(data);
-            handleCreateUser(event);
+            handleCreateUser();
         }
     });
     </script>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    <form method="get" action="" id="register-form">
+                    <form method="post" action="" id="register-form">
                         <div class="form-group mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" name="email" id="email" class="form-control" placeholder="VD: email@domain.com">
