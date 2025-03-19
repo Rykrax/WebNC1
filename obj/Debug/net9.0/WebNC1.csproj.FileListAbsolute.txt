@@ -237,3 +237,4 @@ E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\compressed\32f89n9oom-vd6h7tn78
 E:\Software\Web\LearnASP\WebNC1\bin\Debug\net9.0\BCrypt.Net-Next.dll
 E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\compressed\3f08g15mbj-ai14q4erzk.gz
 E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\compressed\vvc48cc80n-ykptmh5dm2.gz
+E:\Software\Web\LearnASP\WebNC1\obj\Debug\net9.0\compressed\ey5uwx8kbe-ylii0q8ty4.gz

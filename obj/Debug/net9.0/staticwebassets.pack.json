@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\js\\test.js"
     },
     {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\validator.js",
+      "PackagePath": "staticwebassets\\js\\validator.js"
+    },
+    {
       "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

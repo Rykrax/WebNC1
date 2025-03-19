@@ -35,9 +35,7 @@ public class AuthController : ControllerBase
         {
             return BadRequest(new { message = "Email đã tồn tại!" });
         }
-
         
-        // return Ok(new { message = "Đăng ký thành công!" });
         var user = new User
         {
             Email = model.Email,
