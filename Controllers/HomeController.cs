@@ -30,6 +30,12 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet("/test")]
+    public IActionResult test()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();

@@ -21,6 +21,12 @@ let createUser = (data, callback) => {
         .catch(error => console.error("Lỗi khi gửi request:", error));
 };
 
+let alertMessage = (status, message) => {
+    if (status === 400) {
+        alert(message);
+    }
+};
+
 let handleCreateUser = () => {
     // e.preventDefault();
     console.log("vào handleCreateUser");
@@ -35,7 +41,30 @@ let handleCreateUser = () => {
     }
     console.log(data);
     createUser(data, (user) => {
-        console.log(user);
+        let successAlert = document.getElementById("successAlert");
+        let errorAlert = document.getElementById("errorAlert");
+        console.log(user.message);
+        if (user.status === 400) {
+            errorAlert.innerHTML = user.message;
+            errorAlert.classList.remove("d-none");
+            successAlert.classList.add("d-none");
+        }
+        if (user.status === 200) {
+            successAlert.innerHTML = user.message;
+            successAlert.classList.remove("d-none");
+            errorAlert.classList.add("d-none");
+            setTimeout(() => {
+                window.location.href = "/login";
+            }, 3000);
+        }
+        //  else {
+        //     errorAlert.classList.add("d-none");
+        //     if (user.status === 200) {
+        //         successAlert.innerHTML = user.message;
+        //         successAlert.classList.remove("d-none");
+        //         errorAlert.classList.add("d-none");
+        //     }
+        // }
     });
 }
 

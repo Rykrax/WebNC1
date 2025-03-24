@@ -1,0 +1,59 @@
+<div class="container mt-4">
+    <h2>Đăng ký tài khoản</h2>
+
+    <!-- Alert thành công -->
+    <div id="successAlert" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+        Đăng ký thành công!
+    </div>
+
+    <!-- Alert thất bại -->
+    <div id="errorAlert" class="alert alert-danger alert-dismissible fade show d-none" role="alert">
+        Đăng ký thất bại! Vui lòng thử lại.
+    </div>
+
+    <!-- Form đăng ký -->
+    <form id="registerForm">
+        <div class="mb-3">
+            <label for="username" class="form-label">Tên đăng nhập</label>
+            <input type="text" class="form-control" id="username" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Đăng ký</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Ngăn chặn reload trang
+
+        let isSuccess = Math.random() > 0.5; // Giả lập thành công hoặc thất bại
+
+        if (isSuccess) {
+            let successAlert = document.getElementById("successAlert");
+            let errorAlert = document.getElementById("errorAlert");
+
+            successAlert.classList.remove("d-none");
+            errorAlert.classList.add("d-none");
+
+            // Tự động ẩn sau 5 giây
+            @* setTimeout(() => {
+                successAlert.classList.add("d-none");
+            }, 3000); *@
+
+        } else {
+            let errorAlert = document.getElementById("errorAlert");
+            let successAlert = document.getElementById("successAlert");
+
+            errorAlert.classList.remove("d-none");
+            successAlert.classList.add("d-none");
+
+            // Tự động ẩn sau 5 giây
+            @* setTimeout(() => {
+                errorAlert.classList.add("d-none");
+            }, 3000); *@
+        }
+    });
+</script>

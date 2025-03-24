@@ -33,7 +33,7 @@ public class AuthController : ControllerBase
 
         if (await _context.Users.AnyAsync(u => u.Email == model.Email))
         {
-            return BadRequest(new { message = "Email đã tồn tại!" });
+            return BadRequest(new { status = 400, message = "Email đã tồn tại! Vui lòng thử lại" });
         }
         
         var user = new User
@@ -45,6 +45,6 @@ public class AuthController : ControllerBase
 
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
-        return Ok(new { message = "Đăng ký thành công!" });
+        return Ok(new { status = 200, message = "Đăng ký thành công!" });
     }
 }
