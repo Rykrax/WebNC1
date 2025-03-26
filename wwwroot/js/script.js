@@ -53,9 +53,9 @@ let handleCreateUser = () => {
             successAlert.innerHTML = user.message;
             successAlert.classList.remove("d-none");
             errorAlert.classList.add("d-none");
-            setTimeout(() => {
-                window.location.href = "/login";
-            }, 3000);
+            // setTimeout(() => {
+            //     window.location.href = "/";
+            // }, 3000);
         }
         //  else {
         //     errorAlert.classList.add("d-none");

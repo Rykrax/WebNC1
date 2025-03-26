@@ -86,3 +86,6 @@ create table transactions (
 	foreign key (RepAccount, RepBank) references bank_accounts(AccountNumber, BankID)
 )
 go
+
+--reset id
+DBCC CHECKIDENT ('users', RESEED, 0);

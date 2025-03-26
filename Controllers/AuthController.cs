@@ -14,18 +14,47 @@ public class AuthController : ControllerBase
     }
 
     // [HttpPost("login")]
-    // public async Task<IActionResult> Login([FromBody] LoginModel model)
+    // public async Task<IActionResult> Login([FromBody] LoginDTO model)
     // {
     //     var user = await _context.Users
     //         .FirstOrDefaultAsync(u => u.Email == model.Email);
 
     //     if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
     //     {
-    //         return Unauthorized(new { message = "Email hoặc mật khẩu không đúng" });
+    //         return Unauthorized(new { status = 401, message = "Email hoặc mật khẩu không đúng!" });
     //     }
 
-    //     return Ok(new { message = "Đăng nhập thành công", userId = user.Id });
+    //     return Ok(new { status = 200, message = "Đăng nhập thành công!" });
     // }
+
+    [HttpPost("login")]
+    public async Task<IActionResult> Login([FromBody] LoginDTO model)
+    {
+        var exists = await _context.Users.AnyAsync(u => u.Email == model.Email);
+        if (!exists)
+        {
+            return new JsonResult(new { status = 401, message = "Email hoặc mật khẩu không đúng!" });
+        }
+
+        // var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
+        var user = await _context.Users.Where(u => u.Email == model.Email)
+        .Select(u => new { u.UserID, u.PasswordHash })
+        // .AsNoTracking()
+        .FirstOrDefaultAsync();
+
+        if (!BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
+        {
+            return new JsonResult(new { status = 401, message = "Email hoặc mật khẩu không đúng!" });
+        }
+
+        // if (userData == null || !BCrypt.Net.BCrypt.Verify(model.Password, userData.PasswordHash))
+        // {
+        //     return Unauthorized(new { status = 401, message = "Email hoặc mật khẩu không đúng!" });
+        // }
+
+        return Ok(new { status = 200, message = "Đăng nhập thành công!", userId = user.UserID });
+    }
+
 
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegisterDTO model)

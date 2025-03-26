@@ -13,6 +13,7 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [HttpGet("/")]
     public IActionResult Index()
     {
         return View();
@@ -20,6 +21,12 @@ public class HomeController : Controller
 
     [HttpGet("/login")]
     public IActionResult login()
+    {
+        return View();
+    }
+
+    [HttpGet("/home")]
+    public IActionResult home()
     {
         return View();
     }

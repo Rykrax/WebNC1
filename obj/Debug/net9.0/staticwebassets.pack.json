@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\img\\vietcombank.png"
     },
     {
+      "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
       "Id": "E:\\Software\\Web\\LearnASP\\WebNC1\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
